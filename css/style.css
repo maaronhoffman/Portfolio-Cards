@@ -170,13 +170,34 @@ body{
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 1000px) {
     #aboutInside {
         margin-top: 50px;
+        width: 95%;
+        
     }
     #nameId h4 {
         margin-top: 160px;
     }
+
+    #aboutCardMenu {
+        margin-top: 0px;
     }
+    #portCardMenu {
+        margin-top: 0px;
+    }
+    #mainCardMenu {
+        margin-top: 0px;
+    }
+    #mainCard {
+        margin-top: 0px;
+    }
+    #mainCard:hover {
+        transition: none;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        margin-top: 0px;
+    }
+    }
+    
     
 

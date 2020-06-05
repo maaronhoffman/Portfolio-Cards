@@ -25,7 +25,7 @@
     </div>
 
     <script type="text/template" id="cardMenu">
-        <div id="mainCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn">
+        <div id="mainCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
 
     <script type="text/template" id="portMenu">
         
-        <div id="portCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn">
+        <div id="portCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,7 @@
     </script>
 
     <script type="text/template" id="aboutMenu">
-        <div id="aboutCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn">
+        <div id="aboutCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,31 +113,31 @@
         $(document).ready(function(){
 
             function animateCardOut() {
-                $("#mainCard").animate({opacity:0,}, 1000);
-                setTimeout(function() {$("#mainCard").remove();}, 1001);
+                $("#mainCard").animate({opacity:0,}, 700);
+                setTimeout(function() {$("#mainCard").remove();}, 701);
 
             }
 
             function animateCardOutMenu() {
-                $("#mainCardMenu").attr('class', 'animate__animated animate__fadeOut')
-                setTimeout(function() {$("#mainCardMenu").remove();}, 1001);
+                $("#mainCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster')
+                setTimeout(function() {$("#mainCardMenu").remove();}, 701);
 
             }
 
             function animateCardOutPort() {
-                $("#portCardMenu").attr('class', 'animate__animated animate__fadeOut text-center')
-                setTimeout(function() {$("#portCardMenu").remove();}, 1001);
+                $("#portCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster text-center')
+                setTimeout(function() {$("#portCardMenu").remove();}, 701);
 
             }
 
             function animateCardOutAbout() {
-                $("#aboutCardMenu").attr('class', 'animate__animated animate__fadeOut')
-                setTimeout(function() {$("#aboutCardMenu").remove();}, 1001);
+                $("#aboutCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster')
+                setTimeout(function() {$("#aboutCardMenu").remove();}, 701);
 
             }
 
             function animateCardIn() {
-                $("#mainCard").animate({opacity:1,}, 1000);
+                $("#mainCard").animate({opacity:1,}, 700);
             }
 
             function drawMenu() {
@@ -154,43 +154,43 @@
 
             $("#mainCard").on('click', function() {
                 animateCardOut();
-                setTimeout(function(){drawMenu();}, 1500);
+                setTimeout(function(){drawMenu();}, 800);
             });
 
             $(".row").on('click','#portLinkh', function(){
                 
                 animateCardOutMenu();
-                setTimeout(function(){drawPort();}, 1500);
+                setTimeout(function(){drawPort();}, 800);
             });
 
             $(".row").on('click','#homeLinkp', function(){
                 
                 animateCardOutPort();
-                setTimeout(function(){drawMenu();}, 1500);
+                setTimeout(function(){drawMenu();}, 800);
             });
 
             $(".row").on('click','#aboutLinkh', function(){
                 
                 animateCardOutMenu();
-                setTimeout(function(){drawAbout();}, 1500);
+                setTimeout(function(){drawAbout();}, 800);
             });
 
             $(".row").on('click','#aboutLinkp', function(){
                 
                 animateCardOutPort();
-                setTimeout(function(){drawAbout();}, 1500);
+                setTimeout(function(){drawAbout();}, 800);
             });
 
             $(".row").on('click','#homeLinka', function(){
                 
                 animateCardOutAbout();
-                setTimeout(function(){drawMenu();}, 1500);
+                setTimeout(function(){drawMenu();}, 800);
             });
 
             $(".row").on('click','#portLinka', function(){
                 
                 animateCardOutAbout();
-                setTimeout(function(){drawPort();}, 1500);
+                setTimeout(function(){drawPort();}, 800);
             });
 
 
