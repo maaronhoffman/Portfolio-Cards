@@ -115,6 +115,7 @@ body{
 
 .nav-link {
     border-right:.5px solid #8C898F;
+    padding-right: 5px;
 }
 
 #cardMenu {
@@ -180,8 +181,15 @@ body{
     margin-top: 145px;
 }
 
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 1000px) {
+
+    .nav-link {
+        border-right:0px solid #8C898F;
+        
+    }
+
     #aboutInside {
         margin-top: 70px;
         width: 95%;
