@@ -31,14 +31,16 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a id='portLink' class="nav-link" href="#">Portfolio</a>
+                      <a id='portLinkh' class="nav-link" href="#">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a id='aboutLinkh' class="nav-link" href="#">About</a>
                     </li>
                   </ul>
                 </div>
@@ -60,12 +62,15 @@
                 <div class="text-center collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" id='homeLink'href="#">Home<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" id='homeLinkp'href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a id='aboutLinkp' class="nav-link" href="#">About</a>
                     </li>
+                    
                   </ul>
                 </div>
               </nav>
@@ -73,7 +78,35 @@
                   <div id='quizCard'><div id='quizCardText' class=''><h5>Quiz Game</h5></div></div>
               </div>
         </div>
-    
+    </script>
+
+    <script type="text/template" id="aboutMenu">
+        <div id="aboutCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn">
+            <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Michael Hoffman</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a id='homeLinka' class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a id='portLinka' class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id='aboutLink' class="nav-link" href="#">About</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+              <div id='aboutInside' class='p-2 text-wrap justify-content-center'>
+                <img id='profilePic' class='mr-4' src="" alt="">
+                
+                    <p class='text-align-left'>I have worked in several different industries in the past decade. In the music industry, as an audio engineer for DJ Quik. In the TV industry, as a producer and motion graphics artist/designer at JLTV. In technology, as a web designer. I have a deep interest in clean and flat imagery. The modern look involves subtlety and that is the area in which I excel. This website is an example of the clean and simple vision I try to implement in all of my works.  </p>
+                
+             </div>
     </script>
 
     <script>
@@ -97,6 +130,12 @@
 
             }
 
+            function animateCardOutAbout() {
+                $("#aboutCardMenu").attr('class', 'animate__animated animate__fadeOut')
+                setTimeout(function() {$("#aboutCardMenu").remove();}, 1001);
+
+            }
+
             function animateCardIn() {
                 $("#mainCard").animate({opacity:1,}, 1000);
             }
@@ -109,22 +148,52 @@
                 $(".row").append($("#portMenu").html());
             }
 
+            function drawAbout() {
+                $(".row").append($("#aboutMenu").html());
+            }
+
             $("#mainCard").on('click', function() {
                 animateCardOut();
                 setTimeout(function(){drawMenu();}, 1500);
             });
 
-            $(".row").on('click','#portLink', function(){
+            $(".row").on('click','#portLinkh', function(){
                 
                 animateCardOutMenu();
                 setTimeout(function(){drawPort();}, 1500);
             });
 
-            $(".row").on('click','#homeLink', function(){
+            $(".row").on('click','#homeLinkp', function(){
                 
                 animateCardOutPort();
                 setTimeout(function(){drawMenu();}, 1500);
             });
+
+            $(".row").on('click','#aboutLinkh', function(){
+                
+                animateCardOutMenu();
+                setTimeout(function(){drawAbout();}, 1500);
+            });
+
+            $(".row").on('click','#aboutLinkp', function(){
+                
+                animateCardOutPort();
+                setTimeout(function(){drawAbout();}, 1500);
+            });
+
+            $(".row").on('click','#homeLinka', function(){
+                
+                animateCardOutAbout();
+                setTimeout(function(){drawMenu();}, 1500);
+            });
+
+            $(".row").on('click','#portLinka', function(){
+                
+                animateCardOutAbout();
+                setTimeout(function(){drawPort();}, 1500);
+            });
+
+
 
             $(".row").on('click','#quizCard', function(){
                 window.open("https://maaronhoffman.github.io/projectONE/");

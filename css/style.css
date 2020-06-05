@@ -50,6 +50,20 @@ body{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     transition: box-shadow 500ms;
 }
+
+#aboutCardMenu {
+
+    width: 1200px;
+    height:600px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(252,252,252);
+    background: linear-gradient(36deg, rgba(252,252,252,1) 0%, rgba(244,244,244,1) 100%);
+    margin-top: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+}
     
 
 #mainCard:hover{
@@ -134,4 +148,23 @@ body{
     font-family: sweet-sans-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+#profilePic {
+    height:200px;
+    width: 150px;
+    background-image: url(../images/me.png);
+    overflow: hidden;
+    float:left;
+    border-radius: 30px;
+    box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.8);
+    border: .75px solid #424043;
+}
+
+#aboutInside {
+    height:300px;
+    width:70%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 145px;
 }
