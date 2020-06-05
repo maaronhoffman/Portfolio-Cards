@@ -168,3 +168,15 @@ body{
     text-align: left;
     margin-top: 145px;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 700px) {
+    #aboutInside {
+        margin-top: 50px;
+    }
+    #nameId h4 {
+        margin-top: 160px;
+    }
+    }
+    
+
