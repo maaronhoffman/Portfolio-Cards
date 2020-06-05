@@ -10,7 +10,6 @@ body{
 }
 
 #mainCard {
-
     width: 1200px;
     height:600px;
     background-color: aqua;
@@ -24,7 +23,6 @@ body{
 }
 
 #mainCardMenu {
-
     width: 1200px;
     height:600px;
     background-color: aqua;
@@ -38,7 +36,6 @@ body{
 }
 
 #portCardMenu {
-
     width: 1200px;
     height:600px;
     background-color: aqua;
@@ -51,8 +48,13 @@ body{
     transition: box-shadow 500ms;
 }
 
-#aboutCardMenu {
+#portCardHolder {
+    height: 60%;
+    width:70%;
+    
+}
 
+#aboutCardMenu {
     width: 1200px;
     height:600px;
     background-color: aqua;
@@ -67,7 +69,6 @@ body{
     
 
 #mainCard:hover{
-
     width: 1200px;
     height:600px;
     background-color: aqua;
@@ -151,7 +152,7 @@ body{
 }
 
 #profilePic {
-    height:200px;
+    height:150px;
     width: 150px;
     background-image: url(../images/me.png);
     overflow: hidden;
@@ -159,6 +160,16 @@ body{
     border-radius: 30px;
     box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.8);
     border: .75px solid #424043;
+    
+}
+
+#profilePicF {
+    width: 225px;
+    z-index: -1;
+    position: absolute;
+    top:40px;
+    left:-26px;
+    overflow: hidden;
 }
 
 #aboutInside {
@@ -172,7 +183,7 @@ body{
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 1000px) {
     #aboutInside {
-        margin-top: 50px;
+        margin-top: 70px;
         width: 95%;
         
     }
@@ -185,21 +196,25 @@ body{
         background-color: #f5f5f5;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
     }
+
     #portCardMenu {
         margin-top: 0px;
         background-color: #f5f5f5;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
     }
+
     #mainCardMenu {
         margin-top: 0px;
         background-color: #f5f5f5;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
     }
+
     #mainCard {
         margin-top: 0px;
         background-color: #f5f5f5;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
     }
+
     #mainCard:hover {
         transition: none;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -207,10 +222,22 @@ body{
         background-color: #f5f5f5;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
     }
+
     #textMenuCard {
-        width:50%;
+        width:200px;
     }
+
+    #nameId {
+        padding: 10px;
     }
+
+    }
+
+    @media only screen and (max-width : 700px) {
+       
+
+    }
+
     
     
 

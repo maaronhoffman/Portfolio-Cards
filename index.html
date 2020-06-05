@@ -28,6 +28,7 @@
         <div id="mainCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
+                <img id='profilePicF' class='mr-4 mb-1' src="images/flower.svg" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,6 +47,7 @@
                 </div>
               </nav>
               <div id='textMenuCard' class='text-center'>
+                  
                   <h1>This is my portfolio page. I am a 28 year old designer. Feel free to look at my portoflio above. </h1>
               </div>
         </div>
@@ -56,6 +58,7 @@
         <div id="portCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
+                <img id='profilePicF' class='mr-4 mb-1' src="images/flower.svg" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -84,6 +87,7 @@
         <div id="aboutCardMenu" class="overflow-hidden text-center animate__animated animate__fadeIn animate__faster">
             <nav id='cardMenu' class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Michael Hoffman</a>
+                <img id='profilePicF' class='mr-4 mb-1' src="images/flower.svg" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -102,10 +106,10 @@
                 </div>
             </nav>
               <div id='aboutInside' class='p-2 text-wrap justify-content-center'>
-                <img id='profilePic' class='mr-4' src="" alt="">
+                <img id='profilePic' class='mr-4 mb-1' src="" alt="">
                 
                     <p class='text-align-left'>I have worked in several different industries in the past decade. In the music industry, as an audio engineer for DJ Quik. In the TV industry, as a producer and motion graphics artist/designer at JLTV. In technology, as a web designer. I have a deep interest in clean and flat imagery. The modern look involves subtlety and that is the area in which I excel. This website is an example of the clean and simple vision I try to implement in all of my works.  </p>
-                
+                    
              </div>
     </script>
 
@@ -119,19 +123,19 @@
             }
 
             function animateCardOutMenu() {
-                $("#mainCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster')
+                $("#mainCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster overflow-hidden')
                 setTimeout(function() {$("#mainCardMenu").remove();}, 701);
 
             }
 
             function animateCardOutPort() {
-                $("#portCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster text-center')
+                $("#portCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster overflow-hidden text-center')
                 setTimeout(function() {$("#portCardMenu").remove();}, 701);
 
             }
 
             function animateCardOutAbout() {
-                $("#aboutCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster')
+                $("#aboutCardMenu").attr('class', 'animate__animated animate__fadeOut animate__faster overflow-hidden')
                 setTimeout(function() {$("#aboutCardMenu").remove();}, 701);
 
             }
