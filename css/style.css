@@ -1,0 +1,137 @@
+* {
+    font-family: sweet-sans-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body{
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+
+#mainCard {
+
+    width: 1200px;
+    height:600px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(252,252,252);
+    background: linear-gradient(36deg, rgba(252,252,252,1) 0%, rgba(244,244,244,1) 100%);
+    margin-top: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+}
+
+#mainCardMenu {
+
+    width: 1200px;
+    height:600px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(252,252,252);
+    background: linear-gradient(36deg, rgba(252,252,252,1) 0%, rgba(244,244,244,1) 100%);
+    margin-top: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+}
+
+#portCardMenu {
+
+    width: 1200px;
+    height:600px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(252,252,252);
+    background: linear-gradient(36deg, rgba(252,252,252,1) 0%, rgba(244,244,244,1) 100%);
+    margin-top: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+}
+    
+
+#mainCard:hover{
+
+    width: 1200px;
+    height:600px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(252,252,252);
+    background: linear-gradient(36deg, rgba(252,252,252,1) 0%, rgba(244,244,244,1) 100%);
+    margin-top: 100px;
+    box-shadow: 7px 7px 73px 0px rgba(0,0,0,0.34);
+    animation-duration: 4s;
+    text-shadow:7px 7px 73px 0px rgba(0,0,0,0.34) ;
+    
+    
+}
+
+#nameId {
+    margin: 0 auto;
+    line-height: 600px;
+    font-size: 70px;
+    color: #424043;
+    font-family: sweet-sans-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    pointer-events: none;
+}
+
+#textMenuCard h1 {
+    color: #424043;
+    font-family: sweet-sans-pro, sans-serif;
+    font-weight: 150;
+    font-style: normal;
+    pointer-events: none;
+    font-size: 20px;
+
+}
+
+#textMenuCard {
+    height:300px;
+    width:400px;
+    margin: 0 auto;
+    margin-top: 178px;
+}
+
+.nav-link {
+    border-right:.5px solid #8C898F;
+    
+}
+
+#cardMenu {
+    background:transparent !important;
+}
+
+#quizCard {
+    height:200px;
+    width: 150px;
+    background-image: url(../images/quiz.png);
+    overflow: hidden;
+    margin: 60px;
+    float:left;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.8);
+    transform: scale(1);
+    transition: all 100ms ease-in-out;
+    border: .75px solid #424043;
+
+}
+#quizCard:hover {
+    box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.34);
+    transform: scale(1.1);
+}
+
+#quizCardText {
+    background-color: rgba(244,244,244,.7);
+    overflow:hidden;
+}
+
+#quizCardText h4 {
+    font-family: sweet-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
