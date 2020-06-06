@@ -168,9 +168,10 @@ body{
     width: 225px;
     z-index: -1;
     position: absolute;
-    top:40px;
+    top:45px;
     left:-26px;
     overflow: hidden;
+    opacity: 50%;
 }
 
 #aboutInside {
